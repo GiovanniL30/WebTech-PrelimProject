@@ -1,0 +1,26 @@
+@import url(./utils.css); /* utility styles */
+:root {
+  /* fonts */
+  --font-scale: 1;
+  --2xl: calc(var(--font-scale) * 3.5rem);
+  --xl: calc(var(--font-scale) * 3rem);
+  --lg: calc(var(--font-scale) * 2.5rem);
+  --md: calc(var(--font-scale) * 1.5rem);
+  --sm: calc(var(--font-scale) * 1rem);
+}
+
+* {
+  font-family: 'Poppins', system-ui;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+}
+
+@media screen and (min-width: 1200px) {
+}

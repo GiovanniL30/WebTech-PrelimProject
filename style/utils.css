@@ -1,0 +1,72 @@
+.padding {
+  padding: 1.5em;
+}
+
+.padding-y {
+  padding-block: 1.5em;
+}
+
+.padding-x {
+  padding-inline: 1.5em;
+}
+
+.padding-t {
+  padding-top: 1.5em;
+}
+
+.padding-b {
+  padding-bottom: 1.5em;
+}
+
+.padding-l {
+  padding-left: 1.5em;
+}
+
+.padding-r {
+  padding-right: 1.5em;
+}
+
+.max-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .padding-y {
+    padding-block: 3em;
+  }
+
+  .padding-x {
+    padding-inline: 3em;
+  }
+
+  .padding-t {
+    padding-top: 3em;
+  }
+
+  .padding-b {
+    padding-bottom: 3em;
+  }
+
+  .padding-l {
+    padding-left: 3em;
+  }
+
+  .padding-r {
+    padding-right: 3em;
+  }
+
+  .padding {
+    padding: 3em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
