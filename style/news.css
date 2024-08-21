@@ -1,8 +1,11 @@
 @import url(global.css);
 
+.news h1 {
+  color: rgb(47, 47, 127);
+}
+
 .latest-news-container h1 {
   font-size: var(--2xl);
-  color: '#2283BB';
   margin-top: 100px;
   margin-bottom: 20px;
 }
@@ -97,6 +100,10 @@ latest-news-title {
 @media screen and (min-width: 992px) {
   .news-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .latest-news-top-img-container {
+    height: 400px;
   }
 }
 
