@@ -6,7 +6,7 @@
 
 .latest-news-container h1 {
   font-size: var(--2xl);
-  margin-top: 100px;
+  margin-top: 200px;
   margin-bottom: 20px;
 }
 
@@ -31,7 +31,7 @@
   object-fit: cover;
 }
 
-latest-news-title {
+.latest-news-title {
   margin-top: 10px;
   display: flex;
 }
@@ -92,18 +92,30 @@ latest-news-title {
   display: flex;
   flex-direction: column;
   gap: 3px;
+  margin-bottom: 5px;
 }
 
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 992px) {
-  .news-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .latest-news-top-img-container {
     height: 400px;
+  }
+
+  .news-grid {
+    gap: 50px;
+  }
+
+  .older-news-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .older-news-img {
+    width: 100%;
+    height: 100%;
   }
 }
 
