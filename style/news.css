@@ -1,0 +1,104 @@
+@import url(global.css);
+
+.latest-news-container h1 {
+  font-size: var(--2xl);
+  color: '#2283BB';
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.latest-news-container hr {
+  margin-top: 10px;
+}
+
+.latest-news-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.latest-news-top-img-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.latest-news-top-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+latest-news-title {
+  margin-top: 10px;
+  display: flex;
+}
+
+.latest-news-title h1 {
+  font-size: var(--lg);
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.latest-news-title p {
+  color: rgb(167, 167, 167);
+}
+
+.latest-new-text {
+  margin-top: 50px;
+  text-align: justify;
+  text-indent: 20px;
+  font-size: var(--sm);
+}
+
+.news-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.older-news-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.older-news-img {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.older-news-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.older-news-text-content p:first-child {
+  color: rgb(166, 166, 166);
+}
+
+.older-news-text-content p:last-child {
+  text-align: justify;
+  margin-top: 30px;
+}
+
+.older-news-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .news-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
