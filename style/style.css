@@ -17,15 +17,16 @@
   padding: 0;
 }
 
-.hero-section {
-  overflow: hidden;
-}
-
 .header {
-  height: 100px;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-image {
@@ -48,7 +49,7 @@
 
 .arrow {
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   color: white;
   fill: white;
   left: 50%;
