@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.header ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+.header ul li::after {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  scale: 0;
+  transform-origin: left;
+  transition: all 0.5s ease;
+  content: '';
+}
+
+.header ul li:hover::after {
+  scale: 1;
+}
+
+.header ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .header ul {
+    gap: 70px;
+  }
+  .header ul li a {
+    font-size: var(--sm);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
