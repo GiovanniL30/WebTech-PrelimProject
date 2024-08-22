@@ -1,0 +1,21 @@
+.center-title {
+    text-align: center;      
+    color: #2283BB;     
+    display: block;     
+    font-family: 'Poppins';
+    font-size: 64px;
+  }
+
+  .hr {
+    border: none; 
+    height: 2px;
+    width: center;
+    background-color: #2283BB; 
+  }
+
+  .image-position {
+    top: 2046px; 
+    left: 0px; 
+    width: 638px; 
+    height: 698px; 
+  }
