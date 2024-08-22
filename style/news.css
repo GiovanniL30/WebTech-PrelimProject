@@ -50,8 +50,11 @@
 .latest-new-text {
   margin-top: 50px;
   text-align: justify;
-  text-indent: 20px;
   font-size: var(--sm);
+}
+
+.latest-new-text p {
+  text-indent: 20px;
 }
 
 .news-grid {
@@ -60,6 +63,12 @@
   grid-template-columns: 1fr;
   gap: 30px;
   margin-top: 20px;
+  width: 100%;
+}
+
+.news-grid li {
+  width: 100%;
+  overflow: hidden;
 }
 
 .older-news-container {
