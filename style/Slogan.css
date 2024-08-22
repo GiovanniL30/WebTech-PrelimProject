@@ -1,22 +1,32 @@
 
-.slogan {
-    background-image: url('../assests/Slogan.png'); 
-    background-size: cover; 
-    background-position: center; 
-    color: white;
-    padding: 20px; 
-    font-size: 2.5em; 
-    text-align: center; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  }
+.slogan-image img {
+  position: relative;
+  display: grid;
+  flex-direction: grid;
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  width: 100%; 
+  margin: 0; 
+  padding: 0; 
   
-.container {
-    max-width: 1200px; 
-    margin: 0 auto; 
-    padding: 20px; 
-  }
-  
+}
+.slogan-text h1 {
+  display: flex;
+  text-align: center; 
+  color: white;
+  position: absolute;
+  height: auto;
+  left: 35%;
+  font-size: var(--md);
+  font-size: 30px;
+  margin: 0;
+  font-weight: bold;
+  justify-content: center;
+  z-index: 899;
+  white-space: nowrap;
+  transform: translate(-20%, -10%);
+}
 .footer {
     text-align: center; 
     padding: 10px 0; 
