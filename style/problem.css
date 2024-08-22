@@ -1,0 +1,30 @@
+@import url(global.css);
+
+.problem-container {
+
+}
+
+.problem-icon {
+
+}
+
+.footer-content {
+
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .problem-container {
+    flex-direction: row;
+  }
+
+  .problem-content {
+  
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+}
