@@ -60,3 +60,30 @@
   font-family: 'Poppins';
   font-size: 44px;
 }
+
+
+@media (max-width: 768px) {
+  .image-position,
+  .image-position2 {
+    width: 100%; 
+    height: auto; 
+  }
+
+  .overview-container {
+    flex-direction: column;
+    gap: 10px; 
+  }
+
+  .image2-text {
+    width: 100%; 
+    padding: 0 10px;
+  }
+
+  .title1 {
+    font-size: 32px;
+  }
+
+  .image2-text p {
+    font-size: 14px; 
+  }
+}
