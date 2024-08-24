@@ -1,0 +1,87 @@
+@import url(global.css);
+
+.issues-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.issues-container hr {
+  width: 80%;
+  margin: auto;
+  height: 2px;
+}
+
+.issues-title {
+  font-size: var(--lg);
+  font-weight: 600;
+  text-align: center;
+}
+
+.issues-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+}
+
+.issues-item {
+  display: block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid rgb(46, 160, 247);
+  border-radius: 25px;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+
+.issues-icon {
+  width: 100%;
+  text-align: center;
+}
+
+.issues-icon img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.issues-problem {
+  width: 100%;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.issues-problem h1 {
+  font-size: var(--md);
+}
+
+.issues-solution {
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.issues-solution h1 {
+  font-size: var(--md);
+}
+
+.issues-item:hover {
+  transition: ease 2s;
+  height: 90%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .issues-container hr {
+    width: 50%;
+    margin: auto;
+    height: 2px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
