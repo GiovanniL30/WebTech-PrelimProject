@@ -121,6 +121,16 @@
   .issues-item {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 55%;
+  }
+
+  .issues-icon,
+  .issues-content {
+    width: auto; 
+  }
+
+  .issues-item:hover {
+    height: auto; 
   }
 }
 
