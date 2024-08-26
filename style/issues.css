@@ -56,7 +56,7 @@
 }
 
 .issues-content {
-  width: 100%;;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -93,7 +93,7 @@
   transition: all 0.5s ease;
 }
 
-.issues-item:hover .solution-icon{
+.issues-item:hover .solution-icon {
   opacity: 100%;
   transition: all 0.5s ease;
 }
@@ -118,19 +118,28 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .issues-item {
+  .issues-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 55%;
-  }
-
-  .issues-icon,
-  .issues-content {
-    width: auto; 
+    height: 100%;
   }
 
   .issues-item:hover {
-    height: auto; 
+    height: auto;
+  }
+
+  .issues-icon img {
+    width: 70%;
+    object-fit: cover;
+  }
+
+  .issues-problem {
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
