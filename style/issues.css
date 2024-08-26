@@ -26,51 +26,61 @@
 .issues-item {
   display: flex;
   width: 100%;
-  height: 170px;
+  height: 320px;
   flex-direction: column;
   position: relative;
   border: 2px solid rgb(46, 160, 247);
-  border-radius: 25px;
+  border-radius: 5px;
   margin-bottom: 40px;
   transition: ease 0.75s;
 }
 
 .issues-header {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0px 20px;
+  height: 150px;
+  position: relative;
 }
 
 .issues-header img {
-  width: 30%;
+  width: 100%;
+  height: 100%;
+  filter: grayscale();
+  position: relative;
   object-fit: cover;
-}
-
-.issues-header h1 {
-  font-size: var(--md);
 }
 
 .issues-content {
   width: 100%;
   padding: 20px;
+  padding: 10px 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  opacity: 0;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: ease 0.75s;
+  z-index: 10;
 }
 
 .issues-content h1 {
   font-size: var(--md);
+  color: rgb(34, 131, 187);
+  text-align: left;
 }
 
-.issues-item:hover {
-  height: 450px;
-  transition: all 0.75s ease;
+.issues-content p {
+  font-size: var(--sm);
+  text-align: justify;
+}
+
+.issues-dropdown {
+  width: 100%;
+  padding: 0px 30px;
+  z-index: 999;
+  margin-left: auto;
+}
+
+.issues-dropdown img {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
 }
 
 .issues-item:nth-child(2):hover {
@@ -85,23 +95,33 @@
   /* height: 560px; */
 }
 
-.issues-item:hover .issues-content{
+.solution {
+  opacity: 0;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.75s ease;
+}
+
+.issues-content:hover .issues-item {
+  height: 450px;
+  border-color: red;
+}
+
+.issues-dropdown:hover .issues-content{
+  /* height: 450px;
+  transition: all 0.75s ease; */
+}
+
+.issues-dropdown:hover+ .solution {
   opacity: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   transition: all 0.75s ease;
 }
 
 @media screen and (min-width: 768px) {
-  .issues-item {
-    height: 230px;
-  }
 }
 
 @media screen and (min-width: 992px) {
-
-  .issues-grid {
-    grid-template-columns: 1fr 1fr;
-  }
 
   .issues-item {
     width: 95%;
