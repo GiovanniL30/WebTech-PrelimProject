@@ -73,6 +73,18 @@
   transition: all 0.75s ease;
 }
 
+.issues-item:nth-child(2):hover {
+  /* height: 560px; */
+}
+
+.issues-item:nth-child(3):hover {
+  /* height: 560px; */
+}
+
+.issues-item:nth-child(4):hover {
+  /* height: 560px; */
+}
+
 .issues-item:hover .issues-content{
   opacity: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
