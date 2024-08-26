@@ -26,7 +26,7 @@
 .issues-item {
   display: flex;
   width: 100%;
-  height: 320px;
+  height: 330px;
   flex-direction: column;
   position: relative;
   border: 2px solid rgb(46, 160, 247);
@@ -51,12 +51,10 @@
 
 .issues-content {
   width: 100%;
-  padding: 20px;
   padding: 10px 30px;
   display: flex;
   flex-direction: column;
   transition: ease 0.75s;
-  z-index: 10;
 }
 
 .issues-content h1 {
@@ -70,49 +68,40 @@
   text-align: justify;
 }
 
-.issues-dropdown {
+.dropdown {
   width: 100%;
   padding: 0px 30px;
-  z-index: 999;
-  margin-left: auto;
 }
 
-.issues-dropdown img {
-  width: 20px;
-  height: 20px;
-  margin-left: auto;
-}
-
-.issues-item:nth-child(2):hover {
-  /* height: 560px; */
-}
-
-.issues-item:nth-child(3):hover {
-  /* height: 560px; */
-}
-
-.issues-item:nth-child(4):hover {
-  /* height: 560px; */
+.dropdown img {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  margin-left: 500px;
+  font-size: var(--md);
 }
 
 .solution {
-  opacity: 0;
   width: 100%;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+
+.solution h1, .solution p {
+  opacity: 0;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: all 0.5s ease;
+  text-align: justify;
+}
+
+.issues-item:hover {
+  height: 480px;
   transition: all 0.75s ease;
 }
 
-.issues-content:hover .issues-item {
-  height: 450px;
-  border-color: red;
-}
-
-.issues-dropdown:hover .issues-content{
-  /* height: 450px;
-  transition: all 0.75s ease; */
-}
-
-.issues-dropdown:hover+ .solution {
+.issues-item:hover .solution h1, .issues-item:hover .solution p{
   opacity: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   transition: all 0.75s ease;
