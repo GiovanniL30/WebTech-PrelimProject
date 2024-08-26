@@ -26,121 +26,98 @@
 .issues-item {
   display: flex;
   width: 100%;
-  height: 250px;
+  height: 170px;
   flex-direction: column;
   position: relative;
   border: 2px solid rgb(46, 160, 247);
   border-radius: 25px;
   margin-bottom: 40px;
+  transition: ease 0.75s;
 }
 
-.issues-icon {
+.issues-header {
   width: 100%;
-  text-align: center;
-}
-
-.issues-icon img {
-  width: 30%;
-  object-fit: cover;
-}
-
-.solution-icon {
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-}
-
-.solution-icon img {
-  width: 30%;
-  object-fit: cover;
-}
-
-.issues-content {
-  width: 100%;
-  justify-content: space-between;
-}
-
-.issues-content img {
-  opacity: 0;
-}
-
-.issues-problem {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   padding: 0px 20px;
 }
 
-.issues-problem h1 {
+.issues-header img {
+  width: 30%;
+  object-fit: cover;
+}
+
+.issues-header h1 {
   font-size: var(--md);
 }
 
-.issues-solution {
-  display: flex;
+.issues-content {
   width: 100%;
+  padding: 20px;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   opacity: 0;
   clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  transition: ease 0.75s;
 }
 
-.issues-solution h1 {
+.issues-content h1 {
   font-size: var(--md);
 }
 
 .issues-item:hover {
-  height: 500px;
-  transition: all 0.5s ease;
+  height: 450px;
+  transition: all 0.75s ease;
 }
 
-.issues-item:hover .solution-icon {
-  opacity: 100%;
-  transition: all 0.5s ease;
-}
-
-.issues-item:hover .issues-solution {
+.issues-item:hover .issues-content{
   opacity: 1;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  transition: all 0.5s ease;
+  transition: all 0.75s ease;
 }
 
 @media screen and (min-width: 768px) {
+  .issues-item {
+    height: 230px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-  .issues-container hr {
-    width: 50%;
-    margin: auto;
-    height: 2px;
-  }
 
   .issues-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .issues-header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
+  .issues-item {
+    width: 95%;
+    height: 150px;
   }
 
   .issues-item:hover {
-    height: auto;
+    height: 430px;
   }
 
-  .issues-icon img {
-    width: 70%;
-    object-fit: cover;
+  .issues-header {
+    flex-direction: row;
+    height: 100%;
+    margin-right: 100px;
   }
 
-  .issues-problem {
+  .issues-header img {
+    width: 200px;
+  }
+
+  .issues-header h1 {
     width: 100%;
     text-align: center;
-    padding: 0px 20px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 20px;
   }
+
 }
 
 @media screen and (min-width: 1200px) {
