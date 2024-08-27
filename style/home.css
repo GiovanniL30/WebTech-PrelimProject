@@ -100,6 +100,10 @@
   position: relative;
 }
 
+.over-title {
+  font-size: var(--xl);
+}
+
 .deep-ocean::before {
   position: absolute;
   content: "";
@@ -125,6 +129,7 @@
 .overview-container div p {
   text-indent: 20px;
   text-align: justify;
+  font-size: var(--sm);
 }
 
 .learn-more {
@@ -167,6 +172,10 @@
   z-index: 999;
 }
 
+.stats-item p {
+  font-size: var(--sm);
+}
+
 .stats-item div {
   position: absolute;
   top: -10px;
@@ -184,10 +193,18 @@
 }
 
 @media screen and (min-width: 992px) {
+  .over-title {
+    font-size: var(--2xl);
+  }
+
   .overview-container {
     display: grid;
     grid-template-areas: "one  two" "three three";
     margin-bottom: 200px;
+  }
+
+  .overview-container div p:not(:first-child) {
+    text-indent: 0;
   }
 
   .overview-container + button {
