@@ -1,5 +1,6 @@
 :root {
   /* fonts */
+  --primary: rgb(2, 126, 188);
   --font-scale: 1;
   --3xl: calc(var(--font-scale) * 6rem);
   --2xl: calc(var(--font-scale) * 3.5rem);
@@ -10,7 +11,7 @@
 }
 
 * {
-  font-family: 'Poppins', system-ui;
+  font-family: "Poppins", system-ui;
   box-sizing: border-box;
   margin: 0;
   padding: 0;

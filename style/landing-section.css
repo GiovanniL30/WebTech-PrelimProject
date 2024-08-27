@@ -75,20 +75,85 @@
 }
 
 .deep-ocean {
-  height: 200vh;
   background-color: black;
+}
+
+.fish {
+  width: 100%;
+  height: 100%;
+}
+
+.fish img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overview-container {
+  margin-top: 200px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  color: white;
+  gap: 20px;
+}
+
+.overview-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-container div:nth-child(1) button {
+  display: none;
+}
+
+.overview-container div p {
+  text-indent: 20px;
+  text-align: justify;
+}
+
+.learn-more {
+  width: 100%;
+  padding: 10px;
+  margin-top: 50px;
+  background-color: var(--primary);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 100px;
 }
 
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 992px) {
-  .two-image-section {
-    grid-template-columns: 1fr 1fr;
+  .overview-container {
+    display: grid;
+    grid-template-areas: "one  two" "three three";
   }
 
-  .arrow {
-    bottom: 15%;
+  .overview-container + button {
+    display: none;
+  }
+
+  .overview-container div:nth-child(1) {
+    grid-area: one;
+  }
+  .overview-container div:nth-child(1) button {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .overview-container div:nth-child(2) {
+    grid-area: two;
+  }
+
+  .overview-container div:nth-child(3) {
+    margin-top: 20px;
+    grid-area: three;
+    gap: 0;
   }
 }
 
