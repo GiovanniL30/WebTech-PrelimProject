@@ -20,6 +20,10 @@
   z-index: 1001;
 }
 
+.hamburger-black span {
+  background-color: black !important;
+}
+
 .hamburger span {
   width: 100%;
   height: 2px;
@@ -88,6 +92,10 @@
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
+#menu-toggle:checked ~ .nav-link-white li a {
+  color: white !important;
+}
+
 #menu-toggle:checked + .hamburger span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 6px);
   width: 100%;
@@ -100,6 +108,14 @@
 #menu-toggle:checked + .hamburger span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -8px);
   width: 100%;
+}
+
+#menu-toggle:checked + .hamburger-black span:nth-child(1) {
+  background-color: white !important;
+}
+
+#menu-toggle:checked + .hamburger-black span:nth-child(3) {
+  background-color: white !important;
 }
 
 .header ul li {
