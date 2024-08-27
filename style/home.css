@@ -76,6 +76,7 @@
 
 .deep-ocean {
   background-color: black;
+  position: relative;
 }
 
 .fish {
@@ -96,6 +97,19 @@
   flex-direction: column;
   color: white;
   gap: 20px;
+  position: relative;
+}
+
+.deep-ocean::before {
+  position: absolute;
+  content: "";
+  bottom: -400px;
+  height: 400px;
+  width: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  left: 0;
+  z-index: 9;
 }
 
 .overview-container div {
@@ -125,6 +139,47 @@
   margin-bottom: 100px;
 }
 
+.stats {
+  padding-top: 100px;
+  width: 100%;
+  background: url(../assests/coral-bg-img.png) no-repeat center/cover;
+}
+
+.stats-grid {
+  color: white;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 50px;
+}
+
+.stats-item {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 999;
+}
+
+.stats-item div {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-color: white;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
 @media screen and (min-width: 768px) {
 }
 
@@ -132,6 +187,7 @@
   .overview-container {
     display: grid;
     grid-template-areas: "one  two" "three three";
+    margin-bottom: 200px;
   }
 
   .overview-container + button {
@@ -154,6 +210,15 @@
     margin-top: 20px;
     grid-area: three;
     gap: 0;
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid div:last-child {
+    grid-column: span 2;
   }
 }
 
