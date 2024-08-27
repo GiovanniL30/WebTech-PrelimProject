@@ -62,7 +62,12 @@
   display: grid;
 }
 
-.two-image-section div img {
+.two-image-section div div {
+  width: 100%;
+  height: 100%;
+}
+
+.two-image-section div div img {
   width: 100%;
   height: 100%;
   object-fit: cover;
