@@ -1,0 +1,68 @@
+@import url(global.css);
+
+.spicies {
+  height: 200vh;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.spicies::before {
+  position: absolute;
+  content: "";
+  top: -300px;
+  width: 100%;
+  height: 600px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(1, 0, 20, 0.5970763305322129) 10%,
+    rgba(1, 0, 16, 0.8239670868347339) 20%,
+    rgba(0, 0, 8, 0.896796218487395) 25%,
+    rgba(0, 0, 3, 0.9528186274509804) 34%,
+    rgba(0, 0, 0, 1) 62%,
+    rgba(0, 0, 0, 0.5970763305322129) 82%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.spicies .bg {
+  width: 100%;
+  height: 100%;
+  background: url(../assests/bg-ocean.png) no-repeat center/cover;
+}
+
+.spicies .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.692);
+  pointer-events: none;
+}
+
+.overview {
+  background-color: black;
+  color: white;
+  position: relative;
+  z-index: 99;
+}
+
+.overview::before {
+  position: absolute;
+  content: "";
+  top: -150px;
+  width: 100%;
+  height: 150px;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5970763305322129) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+}
