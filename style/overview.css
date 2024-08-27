@@ -29,15 +29,11 @@
     margin-bottom: 10px;
   }
   .image-position3 {
- 
-    float: left;
+  
     width: 928px;
     height: 430px;
     margin-bottom: 20px;
     margin-left: 20px;
-    position: relative;
-    top: -150px; 
-    
   }
   
   .image-position3-container {
