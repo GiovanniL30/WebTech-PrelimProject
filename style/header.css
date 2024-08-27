@@ -31,6 +31,14 @@
   position: relative;
 }
 
+.header-white ul li a {
+  color: white !important;
+}
+
+.header-white ul li::after {
+  background-color: white !important;
+}
+
 .header ul li::after {
   position: absolute;
   width: 100%;
@@ -41,7 +49,7 @@
   scale: 0;
   transform-origin: left;
   transition: all 0.5s ease;
-  content: '';
+  content: "";
 }
 
 .header ul li:hover::after {

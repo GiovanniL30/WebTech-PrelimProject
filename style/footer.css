@@ -1,16 +1,20 @@
 @import url(global.css);
 
+.footer {
+  background-color: rgb(47, 47, 127);
+}
+
 .footer-container {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
-  margin-bottom: 20px;
 }
 
 .footer-logo {
   font-size: var(--lg);
   font-weight: 600;
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .footer-links {
@@ -26,7 +30,7 @@
 }
 
 .footer-item p {
-  color: rgb(161, 161, 161);
+  color: rgb(175, 175, 175);
   font-weight: 600;
 }
 
@@ -34,6 +38,7 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  align-items: self-start;
   gap: 15px;
 }
 
@@ -42,7 +47,7 @@
 }
 
 .footer-item li a {
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: 600;
 }
@@ -57,9 +62,8 @@
 
   .footer-links {
     display: flex;
-    justify-content: space-evenly;
-    gap: 100px;
-    width: 50%;
+    justify-content: space-between;
+    width: 35%;
     margin-left: auto;
   }
 
