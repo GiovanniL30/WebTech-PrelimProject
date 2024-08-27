@@ -3,35 +3,24 @@
 .hero-section {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  width: 100%;
+  height: 500px;
+  bottom: 0;
+  z-index: 999;
 }
 
 .hero-image {
   width: 100%;
   height: 100%;
   position: relative;
-}
-
-@keyframes arrow {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-30%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-.arrow {
-  position: absolute;
-  bottom: 5%;
-  color: white;
-  fill: white;
-  left: 50%;
-  transform: translateX(-50%);
-  rotate: 90deg;
-  animation: 1s arrow infinite ease-in-out;
 }
 
 .sdg-title {
@@ -83,6 +72,11 @@
 .two-image-section div:hover img {
   transform: scale(1.2);
   z-index: 999;
+}
+
+.deep-ocean {
+  height: 200vh;
+  background-color: black;
 }
 
 @media screen and (min-width: 768px) {
