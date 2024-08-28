@@ -113,7 +113,7 @@
   background: rgb(0, 0, 0);
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
   left: 0;
-  z-index: 9;
+  z-index: 2;
 }
 
 .overview-container div {
@@ -122,26 +122,23 @@
   gap: 20px;
 }
 
-.overview-container div:nth-child(1) button {
-  display: none;
-}
-
 .overview-container div p {
   text-indent: 20px;
   text-align: justify;
   font-size: var(--sm);
+  letter-spacing: 1.5px;
 }
 
 .learn-more {
   width: 100%;
   padding: 10px;
-  margin-top: 50px;
   background-color: var(--primary);
   color: white;
   outline: none;
   border: none;
   border-radius: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  font-size: var(--sm);
 }
 
 .stats {
@@ -159,10 +156,20 @@
   justify-content: center;
   height: 100%;
   gap: 50px;
+  position: relative;
+  margin-top: 150px;
+}
+
+.stats-grid::before {
+  content: "Title goes here";
+  font-size: var(--2xl);
+  font-weight: bold;
+  position: absolute;
+  top: -180px;
 }
 
 .stats-item {
-  background-color: var(--primary);
+  background-color: rgba(75, 75, 75, 0.658);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -189,6 +196,53 @@
   place-items: center;
 }
 
+.lm2 {
+  margin-top: 20px;
+}
+
+.advo-section {
+  width: 100%;
+  height: 100vh;
+}
+
+.advovates-grid {
+  display: flex;
+  height: 100%;
+}
+
+.advo-item {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.advo-item:hover {
+  flex: 8;
+}
+
+.advo-item:hover a img {
+  filter: none;
+}
+
+.advo-reveal {
+  position: absolute;
+  display: none;
+}
+
+.advo-item a {
+  width: 100%;
+  height: 100%;
+}
+
+.advo-item a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale();
+}
+
 @media screen and (min-width: 768px) {
 }
 
@@ -207,16 +261,8 @@
     text-indent: 0;
   }
 
-  .overview-container + button {
-    display: none;
-  }
-
   .overview-container div:nth-child(1) {
     grid-area: one;
-  }
-  .overview-container div:nth-child(1) button {
-    display: block;
-    margin-bottom: 0;
   }
 
   .overview-container div:nth-child(2) {
@@ -231,11 +277,19 @@
 
   .stats-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 0;
   }
 
-  .stats-grid div:last-child {
-    grid-column: span 2;
+  .stats-con {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lm2 {
+    width: 20%;
+    align-self: flex-end;
+    margin-top: 50px;
   }
 }
 
