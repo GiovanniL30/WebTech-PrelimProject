@@ -47,33 +47,6 @@
   object-position: 75% 50%;
 }
 
-.two-image-section {
-  display: grid;
-}
-
-.two-image-section div div {
-  width: 100%;
-  height: 100%;
-}
-
-.two-image-section div div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: all 0.5s ease;
-}
-
-.two-image-section div {
-  position: relative;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.two-image-section div:hover img {
-  transform: scale(1.2);
-  z-index: 999;
-}
-
 .deep-ocean {
   background-color: black;
   position: relative;
@@ -143,6 +116,7 @@
 
 .stats {
   padding-top: 100px;
+  position: relative;
   width: 100%;
   background: url(../assests/coral-bg-img.png) no-repeat center/cover;
 }
@@ -161,7 +135,7 @@
 }
 
 .stats-grid::before {
-  content: "Title goes here";
+  content: "Statistical Philippine Informations";
   font-size: var(--2xl);
   font-weight: bold;
   position: absolute;
@@ -171,16 +145,23 @@
 .stats-item {
   background-color: rgba(75, 75, 75, 0.658);
   display: flex;
-  align-items: center;
   justify-content: center;
   position: relative;
   padding: 20px;
   border-radius: 10px;
   z-index: 999;
+  width: 100%;
+  height: 100%;
 }
 
-.stats-item p {
+.stats-item:hover a {
+  text-decoration: underline;
+}
+
+.stats-item a {
   font-size: var(--sm);
+  text-decoration: none;
+  color: white;
 }
 
 .stats-item div {
@@ -196,8 +177,12 @@
   place-items: center;
 }
 
-.lm2 {
-  margin-top: 20px;
+.slogan {
+  width: 100%;
+  background-color: var(--primary);
+  color: white;
+  font-size: var(--md);
+  text-align: center;
 }
 
 .advo-section {
