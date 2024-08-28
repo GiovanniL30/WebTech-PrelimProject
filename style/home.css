@@ -189,7 +189,7 @@
   width: 100%;
 }
 
-.advovates-grid {
+.advocates-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -235,7 +235,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .advovates-grid {
+  .advocates-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
@@ -297,7 +297,7 @@
     margin: 100px 0;
   }
 
-  .advovates-grid {
+  .advocates-grid {
     display: flex;
     gap: 0;
     height: 100%;
