@@ -136,10 +136,10 @@
 
 .stats-grid::before {
   content: "Statistical Philippine Informations";
-  font-size: var(--2xl);
+  font-size: var(--xl);
   font-weight: bold;
   position: absolute;
-  top: -180px;
+  top: -240px;
 }
 
 .stats-item {
@@ -237,6 +237,11 @@
 @media screen and (min-width: 768px) {
   .advovates-grid {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .stats-grid::before {
+    font-size: var(--2xl);
+    top: -170px;
   }
 }
 
