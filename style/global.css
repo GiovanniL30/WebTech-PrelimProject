@@ -1,6 +1,8 @@
 :root {
-  /* fonts */
+  /* colors */
   --primary: rgb(2, 126, 188);
+
+  /* fonts */
   --font-scale: 1;
   --3xl: calc(var(--font-scale) * 6rem);
   --2xl: calc(var(--font-scale) * 3.5rem);
