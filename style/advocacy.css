@@ -30,6 +30,7 @@
 }
 .advocacy-text p {
   margin-bottom: 10px;
+  padding: 20px;
   text-align: justify;
   font-size: var(--sm);
   line-height: 35px;
@@ -52,12 +53,63 @@
   height: auto;
   object-fit: cover;
   border-radius: 8px;
+  padding: 20px;
+}
+.icri-larger {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 90%;
+}
+
+.icri-container {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  height: auto;
+}
+
+.icri-large {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.icri-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.icri-small-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  gap: 20px;
+}
+
+.icri-small-container a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.icri-small-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 @media (max-width: 768px) {
   .coral-pictures {
     grid-template-columns: 1fr;
     transform: translateX(0);
+    padding: 20px;
   }
   .advocacy-vid {
     position: relative;
@@ -90,6 +142,7 @@
   .advocacy-text p {
     margin-bottom: 10px;
     text-align: justify;
+    padding: 20px;
     font-size: var(--sm);
     line-height: 35px;
     -webkit-columns: 250px 2;
@@ -108,7 +161,57 @@
   }
   .coral-pictures img {
     width: 100%;
+    padding: 20px;
     height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .icri-larger {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 90%;
+  }
+
+  .icri-container {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    height: auto;
+  }
+
+  .icri-large {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .icri-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .icri-small-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    gap: 20px;
+  }
+
+  .icri-small-container a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .icri-small-container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
   }
@@ -145,6 +248,7 @@
   }
   .advocacy-text p {
     margin-bottom: 10px;
+    padding: 20px;
     text-align: justify;
     font-size: var(--sm);
     line-height: 35px;
