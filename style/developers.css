@@ -3,11 +3,11 @@
 .dev-title {
   padding-top: 200px;
   font-size: var(--xl);
-  color: rgb(47, 47, 127);
+  color: var(--primary);
 }
 
 .dev-name {
-  color: rgb(47, 47, 127);
+  color: var(--primary);
   font-size: var(--sm);
 }
 

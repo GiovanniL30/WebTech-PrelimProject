@@ -9,7 +9,7 @@
 
 .issues-title {
   font-size: var(--2xl);
-  color: rgb(34, 131, 187);
+  color: var(--primary);
 }
 
 .issues-grid {
@@ -24,14 +24,14 @@
   height: fit-content;
   flex-direction: column;
   position: relative;
-  border: 2px solid rgb(46, 160, 247);
+  border: 2px solid var(--primary);
   border-radius: 5px;
   margin-bottom: 40px;
   transition: ease 0.75s;
 }
 
 .issues-item a {
-  color: rgb(46, 160, 247);
+  color: var(--primary);
   transition: ease 0.75s;
   text-decoration: none;
 }
@@ -64,7 +64,7 @@
 
 .issues-content h1 {
   font-size: var(--md);
-  color: rgb(34, 131, 187);
+  color: var(--primary);
   text-align: left;
 }
 
@@ -92,7 +92,7 @@
 
 .solution h1 {
   font-size: var(--md);
-  color: rgb(34, 131, 187);
+  color: var(--primary);
 }
 
 .solution h1,
@@ -169,7 +169,7 @@
 
   .issues-item:hover {
     transition: all 0.75s ease;
-    border-color: rgb(46, 160, 247);
+    border-color: var(--primary);
   }
 
   .issues-item:hover .issues-header {

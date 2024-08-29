@@ -1,7 +1,7 @@
 @import url(global.css);
 
 .footer {
-  background-color: rgb(34, 131, 187);
+  background-color: var(--primary);
 }
 
 .footer-container {
