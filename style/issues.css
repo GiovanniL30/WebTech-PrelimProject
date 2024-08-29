@@ -32,6 +32,12 @@
 
 .issues-item a {
   color: rgb(46, 160, 247);
+  transition: ease 0.75s;
+  text-decoration: none;
+}
+
+.issues-item a:hover {
+  opacity: 0.5;
 }
 
 .issues-header {
@@ -114,6 +120,14 @@
   }
   .issues-item {
     border: 2px solid lightgrey;
+    height: 390px;
+  }
+
+  .issues-item:nth-child(3) {
+    height: 340px;
+  }
+
+  .issues-item:nth-child(4) {
     height: 360px;
   }
 
@@ -130,18 +144,16 @@
     margin-left: auto;
   }
 
-  .issues-item:nth-child(3),
-  .issues-item:nth-child(4) {
-    height: 340px;
-  }
-
   .issues-item:hover {
-    height: 460px;
+    height: 500px;
   }
 
-  .issues-item:nth-child(3):hover,
-  .issues-item:nth-child(4):hover {
+  .issues-item:nth-child(3):hover {
     height: 440px;
+  }
+
+  .issues-item:nth-child(4):hover {
+    height: 460px;
   }
 
   .issues-header {
