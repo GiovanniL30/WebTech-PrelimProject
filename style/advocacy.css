@@ -1,23 +1,81 @@
 @import url(global.css);
 
 .advocacy-vid {
-    position: relative; 
-    width: 100%;
-    height: 100vh; 
-    overflow: hidden;
-
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 .advocacy-vid video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    display: block;
-    position: absolute; 
-    top: 0;
-    left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .advocacy-title h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  z-index: 999;
+  color: white;
+  font-size: var(--3xl);
+  white-space: nowrap;
+}
+.advocacy-text p {
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: var(--sm);
+  line-height: 35px;
+  -webkit-columns: 250px 2;
+  -moz-colums: 250px 2;
+  columns: 250px 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+.coral-pictures {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 20px;
+  transform: translateX(-10px);
+}
+.coral-pictures img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .coral-pictures {
+    grid-template-columns: 1fr;
+    transform: translateX(0);
+  }
+  .advocacy-vid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .advocacy-vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .advocacy-title h1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -27,9 +85,9 @@
     z-index: 999;
     color: white;
     font-size: var(--3xl);
-    white-space: nowrap; 
-}
-.advocacy-text p {
+    white-space: nowrap;
+  }
+  .advocacy-text p {
     margin-bottom: 10px;
     text-align: justify;
     font-size: var(--sm);
@@ -40,30 +98,74 @@
     -webkit-column-gap: 40px;
     -moz-column-gap: 40px;
     column-gap: 40px;
-}
-.coral-pictures {
+  }
+  .coral-pictures {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     padding: 20px;
     transform: translateX(-10px);
-}
-.coral-pictures img {
+  }
+  .coral-pictures img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 8px;
+  }
 }
 
-@media (max-width: 768px) {
-    .coral-pictures {
-      grid-template-columns: 1fr;
-      transform: translateX(0); 
-    }
+@media screen and (min-width: 1200px) {
+  .advocacy-vid {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .advocacy-vid video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
-
-
-
-@media screen and (min-width: 1200px) {
+  .advocacy-title h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    z-index: 999;
+    color: white;
+    font-size: var(--3xl);
+    white-space: nowrap;
+  }
+  .advocacy-text p {
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: var(--sm);
+    line-height: 35px;
+    -webkit-columns: 250px 2;
+    -moz-colums: 250px 2;
+    columns: 250px 2;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+  }
+  .coral-pictures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 20px;
+    transform: translateX(-10px);
+  }
+  .coral-pictures img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
