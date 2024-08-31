@@ -72,6 +72,12 @@
   z-index: 1;
 }
 
+.black-split {
+  background-color: black;
+  width: 100vh;
+  height: 100px;
+}
+
 .species-container {
   display: flex;
   flex-direction: column;
