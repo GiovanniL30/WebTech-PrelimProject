@@ -319,6 +319,10 @@
     opacity: 1;
   }
 
+  .species-desc:hover {
+    opacity: 1;
+  }
+
   .species-desc a:hover {
     color: rgb(82, 175, 222);
   }
