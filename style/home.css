@@ -268,7 +268,18 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 20px;
+  row-gap: 50px;
+}
+
+.contact-info div {
+  position: relative;
+}
+
+.contact-info div img {
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 20px;
 }
 
 .contact-info div h1 {
@@ -293,7 +304,8 @@
   gap: 10px;
 }
 
-.contact-form div input {
+.contact-form div input,
+#message {
   width: 100%;
   outline: none;
   padding: 10px;
@@ -301,7 +313,8 @@
   border: 1px solid lightgray;
 }
 
-.contact-form div input::placeholder {
+.contact-form div input::placeholder,
+#message::placeholder {
   color: lightgray;
 }
 
@@ -316,6 +329,11 @@
   padding: 10px 0;
   text-align: center;
   cursor: pointer;
+}
+
+#message {
+  resize: none;
+  height: 200px;
 }
 
 @media screen and (min-width: 768px) {
