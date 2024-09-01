@@ -183,6 +183,14 @@
   .logo {
     width: 150px;
   }
+
+  .nav-link-white li a {
+    color: white !important;
+  }
+
+  .nav-link-white li::after {
+    background-color: white !important;
+  }
 }
 
 @media screen and (min-width: 1200px) {

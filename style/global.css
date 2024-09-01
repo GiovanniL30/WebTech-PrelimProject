@@ -1,6 +1,10 @@
 :root {
   /* colors */
   --primary: rgb(2, 126, 188);
+  --bg: white;
+  --text: black;
+  --secondary-light: white;
+  --secondary-dark: black;
 
   /* fonts */
   --font-scale: 1;
@@ -17,4 +21,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.bg {
+  background-color: var(--bg);
+}
+
+.text {
+  color: var(--text);
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    /* colors */
+    --primary: rgb(202, 100, 17);
+    --bg: black;
+    --text: white;
+  }
 }

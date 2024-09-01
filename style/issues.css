@@ -331,7 +331,7 @@
   }
 
   .species-desc a:hover {
-    color: rgb(82, 175, 222);
+    color: var(--primary);
   }
 
   .issues-item {

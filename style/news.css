@@ -146,7 +146,7 @@
 
 .read-more a {
   text-decoration: none;
-  color: white;
+  color: var(--text);
   font-size: 1em;
   font-weight: unset;
 }
