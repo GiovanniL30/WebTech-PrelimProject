@@ -59,72 +59,73 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 60%; 
-  max-width: 700px; 
-  margin: 10px auto; 
+  width: 100%;
+  max-width: 70%;
+  margin: 10px auto;
   padding: 0;
   border: 2px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  background-color: #e0f7fa; 
-  position: relative;
-  align-items: flex-start; 
+  background-color: #e0f7fa;
+  position: static;
+  align-items: flex-start;
   right: 13%;
 }
-
 
 .posts {
   background-color: lightblue;
   padding: 10px;
   border-radius: 5px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .image-container {
   position: relative;
-  width: 100%; 
-  height: auto; 
+  width: 100%;
+  height: auto;
   display: flex;
-  justify-content: center; 
-  margin-bottom: 10px; 
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .image-container img {
-  width: 100%; 
-  height: auto; 
-  object-fit: cover; 
+  width: 50%;
+  height: auto;
+  object-fit: cover;
   display: block;
 }
 
 .text-container {
   padding: 10px;
-  background-color: lightblue; 
+  background-color: lightblue;
   border-radius: 5px;
-  color: #333; 
+  color: #333;
   box-sizing: border-box;
 }
 .Line {
   border: 0;
-  border-top: 1px solid #000; 
-  margin: 20px 0; 
-  width: 100%; 
+  border-top: 1px solid #000;
+  margin: 20px 0;
+  width: 100%;
 }
 .read-more {
   margin-top: 20px;
 }
 .whales-image {
-  position: relative;
-  height: 100px; 
+  width: 48%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .whales-image img {
-  position: absolute;
-  top: 0; 
-  left: 58%; 
-  transform: translateY(-170%); 
-  height: 500px; 
-  width: 420px; 
+  position: relative;
+  top: 0;
+  left: 58%;
+  transform: translateY(-170%);
+  height: 500px;
+  width: 420px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -135,7 +136,7 @@
     transform: translateX(0);
     padding: 20px;
   }
-  
+
   .advocacy-vid {
     position: relative;
     width: 100%;
@@ -179,45 +180,38 @@
   }
   .coral-pictures {
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 15px;
     padding: 20px;
     transform: translateX(-10px);
   }
   .container {
-    width: 90%; 
+    width: 90%;
     right: 0;
   }
-  
+
   .coral-pictures {
     grid-template-columns: 1fr;
     transform: translateX(0);
     padding: 20px;
   }
-  
+
   .image-container {
-    width: 100%; 
+    flex-direction: column;
   }
-  
+
   .image-container img {
-    width: 100%; 
+    width: 100%;
+    margin-bottom: 10px;
   }
-   .whales-image {
+
+  .whales-image {
     position: relative;
-    height: auto; 
+    height: auto;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
-  
-  .whales-image img {
-    position: relative;
-    transform: none; 
-    height: auto; 
-    width: 100%; 
-    max-width: 420px;
-  }
-  
 }
 
 @media screen and (min-width: 1200px) {
