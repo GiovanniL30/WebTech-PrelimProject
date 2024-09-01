@@ -25,7 +25,7 @@
   width: 100%;
   z-index: 999;
   color: white;
-  font-size: var(--3xl);
+  font-size: var(--xl) !important;
   white-space: nowrap;
 }
 .advocacy-text p {
