@@ -59,7 +59,7 @@
   position: relative;
   width: 100%;
   background: url(../assets/ocean-bg.jpg) no-repeat center/cover;
-} 
+}
 
 .species::before {
   content: "";
@@ -99,7 +99,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  justify-items: center;
+  align-items: center;
   padding: 1em;
   transition: all 0.5s ease;
 }
@@ -275,7 +275,7 @@
   .black-split {
     height: 10em;
   }
-  
+
   .species-item {
     display: flex;
     flex-direction: row;
@@ -294,7 +294,7 @@
   .species-item:nth-child(6) {
     flex-direction: row-reverse;
   }
-  
+
   .species-item img {
     padding-right: 2em;
     height: 50%;
@@ -313,10 +313,17 @@
 
   .species-desc {
     opacity: 0;
+    pointer-events: none;
   }
-  
+
+  .species-desc:hover {
+    opacity: 1;
+    pointer-events: unset;
+  }
+
   .species-item img:hover ~ .species-desc {
     opacity: 1;
+    pointer-events: unset;
   }
 
   .species-desc a:hover {
