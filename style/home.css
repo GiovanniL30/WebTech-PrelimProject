@@ -234,6 +234,90 @@
   color: var(--primary);
 }
 
+.contact-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.contact-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.contact-title h1 {
+  font-size: var(--lg);
+  color: var(--primary);
+}
+
+.contact-title p {
+  color: rgb(144, 144, 144);
+}
+
+.contact-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 100px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.contact-info div h1 {
+  font-size: var(--sm);
+}
+
+.contact-info div p {
+  font-size: 0.9em;
+  color: rgb(144, 144, 144);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.contact-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form div input {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+}
+
+.contact-form div input::placeholder {
+  color: lightgray;
+}
+
+.submit {
+  background-color: var(--primary);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  align-self: flex-start;
+  width: 30%;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 768px) {
   .advocates-grid {
     grid-template-columns: 1fr 1fr 1fr;
