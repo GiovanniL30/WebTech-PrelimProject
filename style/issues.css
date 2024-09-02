@@ -84,7 +84,7 @@
 }
 
 .species-container h1 {
-  color: white;
+  color: var(--primary);
   font-size: var(--lg);
   padding-bottom: 3em;
 }

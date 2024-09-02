@@ -140,6 +140,7 @@
   font-weight: bold;
   position: absolute;
   top: -240px;
+  color: var(--primary);
 }
 
 .stats-item {
