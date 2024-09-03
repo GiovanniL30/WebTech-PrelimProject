@@ -29,30 +29,122 @@
   white-space: nowrap;
 }
 
-@media (max-width: 768px) {
-  .advocacy-vid video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-
-  .advocacy-title h1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100%;
-    z-index: 100;
-    color: white;
-    font-size: var(--3xl);
-    white-space: nowrap;
-  }
+.advo-1 {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+  width: 100%;
 }
 
-@media screen and (min-width: 1200px) {
+.advo-1 p {
+  text-align: justify;
+}
+
+.advo-1-img {
+  width: 100%;
+}
+
+.advo-1-img img {
+  width: 100%;
+  height: 100%;
+  max-height: 450px;
+  object-fit: cover;
+}
+
+.advo-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.advo-2 a:hover img {
+  scale: 1.1;
+}
+
+.advo-2 a {
+  width: 100%;
+}
+
+.advo-2 a img {
+  width: 100%;
+  max-height: 450px;
+  transition: all 0.5s ease;
+}
+
+.advo-3 {
+  display: flex;
+  height: 600px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.advo-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.advo-3-text {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(132, 132, 132, 0.851);
+  justify-content: left;
+  gap: 20px;
+  padding: 20px;
+}
+
+.advo-3-text .read-more a {
+  color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .advo-3-text .read-more {
+    align-self: flex-start;
+  }
+
+  .advo-1 {
+    flex-direction: row;
+  }
+
+  .advo-1 div {
+    width: 50%;
+  }
+
+  .advo-1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .advo-2 {
+    display: grid;
+    grid-template-areas:
+      "one  two "
+      "one  three ";
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .advo-2 a:nth-child(1) {
+    grid-area: one;
+  }
+
+  .advo-2 a:nth-child(1) img {
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .advo-2 a:nth-child(2) {
+    grid-area: two;
+  }
+
+  .advo-2 a:nth-child(3) {
+    grid-area: three;
+  }
 }
