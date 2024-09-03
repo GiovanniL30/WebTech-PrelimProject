@@ -1,26 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .sticky-container {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 60px;
+  right: 60px;
   z-index: 1000;
 }
+
 .scroll-to-top {
-  background-color: #333;
+  background-color: #72b9e2;
   border: none;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
 }
+
 .scroll-to-top img {
   width: 24px;
   height: 24px;
-  color: #fff;
 }
+
 .scroll-to-top:hover {
-  background-color: #555;
+  background-color: #383838;
+}
+
+@media (max-width: 768px) {
+  .sticky-container {
+    bottom: 60px;
+    right: 60px;
+  }
+
+  .scroll-to-top {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+  }
+
+  .scroll-to-top img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sticky-container {
+    bottom: 50px;
+    right: 50px;
+  }
+
+  .scroll-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+  }
+
+  .scroll-to-top img {
+    width: 18px;
+    height: 18px;
+  }
 }
