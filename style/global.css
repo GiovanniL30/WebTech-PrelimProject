@@ -17,7 +17,7 @@
 }
 
 * {
-  font-family: "Poppins", system-ui;
+  font-family: "Montserrat", system-ui;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -34,8 +34,12 @@
 @media screen and (min-width: 992px) {
   :root {
     /* colors */
-    --primary: rgba(201, 107, 30, 0.849);
+    --primary: rgba(125, 216, 216, 0.849);
     --bg: rgb(25, 25, 25);
     --text: white;
+  }
+
+  * {
+    font-family: "Poppins", system-ui;
   }
 }
