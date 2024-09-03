@@ -326,12 +326,8 @@
     pointer-events: unset;
   }
 
-  .species-desc:hover {
-    opacity: 1;
-  }
-
   .species-desc a:hover {
-    color: var(--primary);
+    opacity: 0.5;
   }
 
   .issues-item {
@@ -358,6 +354,7 @@
     height: 30px;
     display: block;
     margin-left: auto;
+    transform: ;
   }
 
   .issues-item:hover {

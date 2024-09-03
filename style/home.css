@@ -106,12 +106,17 @@
   width: 100%;
   padding: 10px;
   background-color: var(--primary);
-  color: white;
+  transition: 0.5s;
   outline: none;
   border: none;
   border-radius: 5px;
   margin-bottom: 20px;
   font-size: var(--sm);
+}
+
+.learn-more a {
+  color: white;
+  text-decoration: none;
 }
 
 .stats {
@@ -376,6 +381,10 @@
     margin-top: 20px;
     grid-area: three;
     gap: 0;
+  }
+
+  .learn-more:hover {
+    opacity: 0.5;
   }
 
   .stats-grid {
