@@ -73,6 +73,7 @@
 
 .advo-2 a {
   width: 100%;
+  overflow: hidden;
 }
 
 .advo-2 a img {
@@ -127,7 +128,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
   }
 
   .advo-2 {
