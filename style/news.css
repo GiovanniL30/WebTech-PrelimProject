@@ -72,6 +72,7 @@
   align-self: flex-end;
   transition: all 0.3s ease;
   cursor: pointer;
+  color: white;
 }
 
 .read-more:hover {
@@ -183,10 +184,16 @@
     height: 100%;
   }
 
-  .read-more {
+  .latest-new-text a button {
+    width: 50%;
+    max-width: 200px;
+  }
+
+  .older-news-text-content a:last-child {
     width: 50%;
     max-width: 200px;
     margin-top: auto;
+    align-self: flex-end;
   }
 }
 
