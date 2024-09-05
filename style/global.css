@@ -7,13 +7,12 @@
   --secondary-dark: black;
 
   /* fonts */
-  --font-scale: 1;
-  --3xl: calc(var(--font-scale) * 6rem);
-  --2xl: calc(var(--font-scale) * 3.5rem);
-  --xl: calc(var(--font-scale) * 3rem);
-  --lg: calc(var(--font-scale) * 2.5rem);
-  --md: calc(var(--font-scale) * 1.5rem);
-  --sm: calc(var(--font-scale) * 1.1rem);
+  --xxxl: 6rem;
+  --xxl: 3.5rem;
+  --xl: 3rem;
+  --lg: 2.5rem;
+  --md: 1.5rem;
+  --sm: 1.1rem;
 }
 
 * {
