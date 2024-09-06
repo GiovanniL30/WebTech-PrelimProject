@@ -184,12 +184,12 @@
     height: 100%;
   }
 
-  .latest-new-text a button {
+  .latest-new-text button {
     width: 50%;
     max-width: 200px;
   }
 
-  .older-news-text-content a:last-child {
+  .older-news-text-content button:last-child {
     width: 50%;
     max-width: 200px;
     margin-top: auto;
