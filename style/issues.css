@@ -83,12 +83,6 @@
   width: 100%;
 }
 
-.species-container h1 {
-  color: var(--primary);
-  font-size: var(--lg);
-  padding-bottom: 3em;
-}
-
 .species-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -135,11 +129,19 @@
   transition: all 0.5s ease;
 }
 
+.species-container h1 span {
+  display: none;
+}
+
 .issues-container {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+}
+
+.issues-container h1 span {
+  display: none;
 }
 
 .issues-title {
@@ -214,7 +216,7 @@
   transition: all 0.75s ease;
 }
 
-.issues-content h1 {
+.issues-content h1{
   font-size: var(--md);
   color: var(--primary);
   text-align: left;
@@ -268,12 +270,60 @@
   transform: none;
 }
 
+.wave-text {
+  font-size: var(--md);
+  color: var(--primary);
+  letter-spacing: 3px;
+  display: inline-block;
+  text-align: center;
+}
+
+.wave-text h1 span {
+  display: inline-block;
+  transform-origin: bottom center;
+  animation: wave 2s infinite ease-in-out;
+}
+
+.wave-text span:nth-child(1) { animation-delay: 0s; }
+.wave-text span:nth-child(2) { animation-delay: 0.1s; }
+.wave-text span:nth-child(3) { animation-delay: 0.2s; }
+.wave-text span:nth-child(4) { animation-delay: 0.3s; }
+.wave-text span:nth-child(5) { animation-delay: 0.4s; }
+.wave-text span:nth-child(6) { animation-delay: 0.5s; }
+.wave-text span:nth-child(7) { animation-delay: 0.6s; }
+.wave-text span:nth-child(8) { animation-delay: 0.7s; }
+.wave-text span:nth-child(9) { animation-delay: 0.8s; }
+.wave-text span:nth-child(10) { animation-delay: 0.9s; }
+.wave-text span:nth-child(11) { animation-delay: 1.0s; }
+.wave-text span:nth-child(12) { animation-delay: 1.1s; }
+.wave-text span:nth-child(13) { animation-delay: 1.2s; }
+.wave-text span:nth-child(14) { animation-delay: 1.3s; }
+.wave-text span:nth-child(15) { animation-delay: 1.4s; }
+.wave-text span:nth-child(16) { animation-delay: 1.5s; }
+.wave-text span:nth-child(17) { animation-delay: 1.6s; }
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(20deg); }
+}
+
 @media screen and (min-width: 768px) {
 }
 
 @media screen and (min-width: 992px) {
   .black-split {
     height: 10em;
+  }
+
+  .species-container h1 span, .issues-container h1 span{
+    color: var(--primary);
+    font-size: var(--lg);
+    padding-bottom: 3em;
+    display: unset;
+  }
+
+  .wave-text h1 span{
+    display: none;
   }
 
   .species-item {
