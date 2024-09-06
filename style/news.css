@@ -15,8 +15,9 @@
 
 .latest-news-container h1 {
   font-size: var(--xxl);
-  margin-top: 200px;
+  margin-top: 100px;
   margin-bottom: 20px;
+  display: none;
 }
 
 .latest-news-container hr {
@@ -165,6 +166,15 @@
 }
 
 @media screen and (min-width: 992px) {
+  .latest-news-container h1 {
+    margin-top: 300px;
+    display: unset;
+  }
+
+  .wave-text {
+    display: none;
+  }
+
   .latest-news-top-img-container {
     height: 400px;
   }
