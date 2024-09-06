@@ -235,10 +235,17 @@
 }
 
 .advo-title {
-  font-size: var(--xxl);
-  text-align: center;
-  margin-bottom: 40px;
-  color: var(--primary);
+  display: none;
+}
+
+.advo-section .wave-text h1 span {
+  font-size: var(--lg);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.max-container .wave-text h1 span {
+  font-size: var(--lg);
 }
 
 .contact-main-container {
@@ -255,9 +262,14 @@
   gap: 10px;
 }
 
-.contact-title h1 {
+.contact-title h1 span {
   font-size: var(--lg);
   color: var(--primary);
+  display: none;
+}
+
+.contact-title .wave-text h1 span {
+  display: inline-block;
 }
 
 .contact-title p {
@@ -356,6 +368,25 @@
 }
 
 @media screen and (min-width: 992px) {
+  
+  .advo-title {
+    font-size: var(--xxl);
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--primary);
+    display: block;
+  }
+
+  .contact-title h1 span {
+    font-size: var(--lg);
+    color: var(--primary);
+    display: block;
+  }
+
+  .contact-title .wave-text h1 span {
+    display: none;
+  }
+
   .over-title {
     font-size: var(--xxl);
   }
